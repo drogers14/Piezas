@@ -24,6 +24,19 @@ const int COLUMNS = 4;
 **/
 Piezas::Piezas()
 {
+  for(unsigned int i = 0; i < ROWS; i++){
+    for(unsigned int j = 0; j< COLUMNS; j++){
+      board[i][j] = Blank;
+    }
+  }
+
+  for(unsigned int i = 0; i < ROWS; i++){
+    for(unsigned int j = 0; j< COLUMNS; j++){
+      cout<<board[i][j]<<" ";
+    }
+    cout<<endl;
+  }
+
 }
 
 /**
