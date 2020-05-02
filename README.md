@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/drogers14/Piezas.svg?branch=master)](https://travis-ci.org/drogers14/Piezas)
 # Piezas
 
 ## Associated Enumerated Types
@@ -33,3 +34,4 @@ ___
 `Piece gameState()`
 
 *Returns which Piece has won, if there is a winner, Invalid if the game is not over, or Blank if the board is filled and no one has won ("tie"). For a game to be over, all locations on the board must be filled with X's and O's (i.e. no remaining Blank spaces). The winner is which player has the most adjacent pieces in a single line. Lines can go either vertically or horizontally. If both X's and O's have the same max number of pieces in a line, it is a tie.*
+
