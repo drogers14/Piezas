@@ -32,9 +32,9 @@ Piezas::Piezas()
 
   for(unsigned int i = 0; i < ROWS; i++){
     for(unsigned int j = 0; j< COLUMNS; j++){
-      cout<<board[i][j]<<" ";
+      std::cout<<board[i][j]<<" ";
     }
-    cout<<endl;
+    std::cout<<std::endl;
   }
 
 }
