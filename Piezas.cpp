@@ -1,5 +1,6 @@
 #include "Piezas.h"
 #include <vector>
+#include <iostream>
 const int ROWS = 3;
 const int COLUMNS = 4;
 /** CLASS Piezas
