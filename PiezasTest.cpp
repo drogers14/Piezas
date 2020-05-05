@@ -120,3 +120,42 @@ TEST(PiezasTest, xWin)
   Piece xWin = obj.gameState();
   EXPECT_EQ(xWin, X);
 }
+
+
+TEST(PiezasTest, oWin)
+  Piezas obj;
+
+  obj.dropPiece(0);//x
+  obj.dropPiece(0);
+  obj.dropPiece(1);
+  obj.dropPiece(1);
+  obj.dropPiece(0);
+  obj.dropPiece(2);
+  obj.dropPiece(1);
+  obj.dropPiece(2);
+  obj.dropPiece(3);//x
+  obj.dropPiece(3);//o
+  obj.dropPiece(2);
+  obj.dropPiece(3);
+
+
+{
+  Piezas obj;
+  
+  obj.dropPiece(0);
+  obj.dropPiece(0);
+  obj.dropPiece(1);
+  obj.dropPiece(0);
+  obj.dropPiece(2);
+  obj.dropPiece(1);
+
+  obj.dropPiece(3);
+  obj.dropPiece(1);
+  obj.dropPiece(2);
+  obj.dropPiece(3);
+  obj.dropPiece(2);
+  obj.dropPiece(3);
+
+  Piece oWin = obj.gameState();
+  EXPECT_EQ(oWin, O);
+}
