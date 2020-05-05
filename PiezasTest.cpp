@@ -12,7 +12,7 @@ class PiezasTest : public ::testing::Test
     Piezas();
     } //constructor runs before each test
 		virtual ~PiezasTest(){
-      reset();
+      //reset();
     } //destructor cleans up after tests
 		virtual void SetUp(){} //sets up before each test (after constructor)
 		virtual void TearDown(){} //clean up after each test, (before destructor) 
