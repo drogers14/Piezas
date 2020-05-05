@@ -123,6 +123,7 @@ TEST(PiezasTest, xWin)
 
 
 TEST(PiezasTest, oWin)
+{
   Piezas obj;
 
   obj.dropPiece(0);//x
