@@ -74,16 +74,16 @@ TEST(PiezasTest, gameStateTest){
   obj.dropPiece(0); //does this run?
   obj.dropPiece(0);
   obj.dropPiece(0);
-  /*obj.dropPiece(1);
   obj.dropPiece(1);
   obj.dropPiece(1);
+  obj.dropPiece(1);
   obj.dropPiece(2);
   obj.dropPiece(2);
   obj.dropPiece(2);
   obj.dropPiece(3);
   obj.dropPiece(3);
   obj.dropPiece(3);
-*/
+
   Piece actual1 = obj.gameState();
   EXPECT_EQ(actual, Blank);
 
