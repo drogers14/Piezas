@@ -57,5 +57,7 @@ EXPECT_EQ(actual2, Invalid);
 Piece actual3 = obj.pieceAt(2, -1);
 EXPECT_EQ(actual3, Invalid);
 
+Piece actual4 = obj.pieceAt(2, 2);
+EXPECT_EQ(actual4, Invalid);
 
 }
