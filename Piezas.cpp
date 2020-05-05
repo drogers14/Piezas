@@ -25,12 +25,13 @@ const int COLUMNS = 4;
  **/
 Piezas::Piezas()
 {
-  board.resize(ROWS);
+  /*board.resize(ROWS);
   for(unsigned int i = 0; i < ROWS; i++){
     for(unsigned int j = 0; j< COLUMNS; j++){
       board[i].push_back(Blank);//segfault u_u
     }
-  }
+  }*/
+  reset();
   turn = X;
 }
 
@@ -43,7 +44,7 @@ void Piezas::reset()
   board.resize(ROWS);
   for(unsigned int i = 0; i < ROWS; i++){
     for(unsigned int j = 0; j< COLUMNS; j++){
-      board[i].push_back(Blank);//segfault u_u
+      board[i].push_back(Blank);
     }
   }
 }
