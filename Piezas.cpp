@@ -25,19 +25,13 @@ const int COLUMNS = 4;
 **/
 Piezas::Piezas()
 {
+  board.resize(ROWS);
   for(unsigned int i = 0; i < ROWS; i++){
     for(unsigned int j = 0; j< COLUMNS; j++){
-      board[i][j] = Blank;
+      board[i].push_back(Blank);//segfault u_u
     }
   }
-
-  for(unsigned int i = 0; i < ROWS; i++){
-    for(unsigned int j = 0; j< COLUMNS; j++){
-      std::cout<<board[i][j]<<" ";
-    }
-    std::cout<<std::endl;
-  }
-
+  turn = X;
 }
 
 /**
@@ -45,7 +39,13 @@ Piezas::Piezas()
  * same size as previously specified
 **/
 void Piezas::reset()
-{
+{ 
+  board.resize(ROWS);
+  for(unsigned int i = 0; i < ROWS; i++){
+    for(unsigned int j = 0; j< COLUMNS; j++){
+      board[i].push_back(Blank);//segfault u_u
+    }
+  }
 }
 
 /**
@@ -58,7 +58,19 @@ void Piezas::reset()
 **/ 
 Piece Piezas::dropPiece(int column)
 {
-    return Blank;
+  if(column >= COLUMNS){
+    return INVALID;
+  }
+  if(board[ROWS-1][column] != BLANK){
+    return INVALID;
+  }
+
+  for(int i=0; i<ROWS; i++){
+    if(board[i][column] = BLANK){
+      board[i][column] = turn;
+    }
+  }
+    return turn;
 }
 
 /**
