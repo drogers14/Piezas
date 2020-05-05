@@ -146,5 +146,10 @@ Piece Piezas::gameState()
    }
  }
 
+ if(xMax > oMax){
+   return X;
+ }else{
+   return O;
+ }
   return Blank;
 }

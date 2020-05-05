@@ -71,4 +71,5 @@ TEST(PiezasTest, gameStateTest){
   Piece actual = obj.gameState();
   EXPECT_EQ(actual, Invalid);
 
+  obj.dropPiece(0); //does this run?
 }
