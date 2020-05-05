@@ -48,6 +48,14 @@ Piezas obj;
 Piece actual = obj.pieceAt(3, 4);
 EXPECT_EQ(actual, Invalid);
 
+Piece actual1 = obj.pieceAt(-1, 4);
+EXPECT_EQ(actual1, Invalid);
+
+Piece actual2 = obj.pieceAt(2, 4);
+EXPECT_EQ(actual2, Invalid);
+
+Piece actual3 = obj.pieceAt(2, -1);
+EXPECT_EQ(actual3, Invalid);
 
 
 }
