@@ -21,7 +21,7 @@ TEST(PiezasTest, sanityCheck)
 
 TEST(PiezasTest, dropPieceOutOfBounds)
 {
-  Practice obj;
+  Piezas obj;
   Piece actual = obj.dropPiece(3);
   EXPECT_EQ(actual,  Invalid);
 }
