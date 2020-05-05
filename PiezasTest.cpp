@@ -8,9 +8,11 @@
 class PiezasTest : public ::testing::Test
 {
 	protected:
-		PiezasTest(){} //constructor runs before each test
-		virtual ~PiezasTest(){
+		PiezasTest(){
     Piezas();
+    } //constructor runs before each test
+		virtual ~PiezasTest(){
+      reset();
     } //destructor cleans up after tests
 		virtual void SetUp(){} //sets up before each test (after constructor)
 		virtual void TearDown(){} //clean up after each test, (before destructor) 
