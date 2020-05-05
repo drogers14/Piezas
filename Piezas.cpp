@@ -152,7 +152,7 @@ Piece Piezas::gameState()
 
  if(xMax > oMax){
    return X;
- }else{
+ }else if(oMax > xMax){
    return O;
  }
   return Blank;
