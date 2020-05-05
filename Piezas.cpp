@@ -115,6 +115,8 @@ Piece Piezas::pieceAt(int row, int column)
  **/
 Piece Piezas::gameState()
 {
+  int oCur, xCur, oMax, xMax;
+  oCur = xCur = oMax = xMax = 0;
   //game not over
   for(int i=0; i<ROWS; i++){
     for(int j = 0; j<COLUMNS; j++){
@@ -123,6 +125,26 @@ Piece Piezas::gameState()
       }
     }
   }
+ 
+ //x vertical wins
+ for(int i=0; i<ROWS; i++){
+   for(int j =0; j<COLUMNS; j++){
+     if(board[i][j]==X){
+       oCur = 0;
+       xCur++;
+       if(xCur > xMax){
+         xMax = xCur;
+       }
+     }
+     if(board[i][j] == O){
+       xCur = 0;
+       oCur++;
+       if(oCur > oMax){
+         oMax = oCur;
+       }
+     }
+   }
+ }
 
   return Blank;
 }
