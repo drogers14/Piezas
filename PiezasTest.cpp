@@ -101,6 +101,8 @@ TEST(PiezasTest, gameStateTest){
 
 TEST(PiezasTest, xWin)
 {
+  Piezas obj;
+  
   obj.dropPiece(0);
   obj.dropPiece(0);
   obj.dropPiece(1);
