@@ -77,10 +77,13 @@ TEST(PiezasTest, gameStateTest){
 
   Piece actual1 = obj.gameState();
   EXPECT_EQ(actual1, Invalid);
-/*  obj.dropPiece(1);
   obj.dropPiece(1);
   obj.dropPiece(1);
-  obj.dropPiece(2);
+  obj.dropPiece(1);
+
+  Piece actual2 = obj.gameState();
+  EXPECT_EQ(actual2, Invalid);
+ /* obj.dropPiece(2);
   obj.dropPiece(2);
   obj.dropPiece(2);
   obj.dropPiece(3);
