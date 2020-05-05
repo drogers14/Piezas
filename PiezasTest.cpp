@@ -18,3 +18,8 @@ TEST(PiezasTest, sanityCheck)
 {
 	ASSERT_TRUE(true);
 }
+
+TEST(PiezasTest, dropPieceOutOfBounds)
+{
+  EXPECT_EQ(dropPiece(3), INVALID);
+}
