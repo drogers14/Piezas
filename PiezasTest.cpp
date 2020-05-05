@@ -150,17 +150,17 @@ TEST(PiezasTest, xwin)
   Piezas obj;
 
   obj.dropPiece(0);//x
-  obj.dropPiece(1);
-  obj.dropPiece(0);
-  obj.dropPiece(1);
-  obj.dropPiece(0);
-  obj.dropPiece(2);
-  obj.dropPiece(2);
-  obj.dropPiece(1);
-  obj.dropPiece(3);//x
-  obj.dropPiece(3);//o
-  obj.dropPiece(2);
   obj.dropPiece(3);
+  obj.dropPiece(1);
+  obj.dropPiece(2);//o
+  obj.dropPiece(0);
+  obj.dropPiece(1);
+  obj.dropPiece(0);//x
+  obj.dropPiece(2);
+  obj.dropPiece(3);//x
+  obj.dropPiece(1);
+  obj.dropPiece(2);
+  obj.dropPiece(3);//o
 
 
   Piece xWin = obj.gameState();
