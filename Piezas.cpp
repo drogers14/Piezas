@@ -59,14 +59,14 @@ void Piezas::reset()
 Piece Piezas::dropPiece(int column)
 {
   if(column >= COLUMNS){
-    return INVALID;
+    return Invalid;
   }
-  if(board[ROWS-1][column] != BLANK){
-    return INVALID;
+  if(board[ROWS-1][column] != Blank){
+    return Invalid;
   }
 
   for(int i=0; i<ROWS; i++){
-    if(board[i][column] = BLANK){
+    if(board[i][column] = Blank){
       board[i][column] = turn;
     }
   }
