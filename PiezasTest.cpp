@@ -21,5 +21,6 @@ TEST(PiezasTest, sanityCheck)
 
 TEST(PiezasTest, dropPieceOutOfBounds)
 {
-  EXPECT_EQ(dropPiece(3), Invalid);
+  Piece obj = dropPiece(3);
+  EXPECT_EQ(obj,  Invalid);
 }
