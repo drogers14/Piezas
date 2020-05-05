@@ -91,15 +91,15 @@ Piece Piezas::pieceAt(int row, int column)
     return Invalid;
   }
 
-  if(colum >= COLUMNS || column < 0){
+  if(column >= COLUMNS || column < 0){
     return Invalid;
   }
   
-  if(blank[row][column] == Blank){
+  if(board[row][column] == Blank){
     return Blank
   }
 
-  return blank[row][column]
+  return blank[row][column];
 }
 
 /**
