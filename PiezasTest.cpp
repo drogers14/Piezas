@@ -27,6 +27,15 @@ TEST(PiezasTest, dropPieceOutOfBounds)
   Piece actual = obj.dropPiece(5);
   EXPECT_EQ(actual,  '?');
 
+  Piece actual1 = obj.dropPiece(0);
+  EXPECT_EQ(actual1, 'O');
+
   Piece actual2 = obj.dropPiece(0);
-  EXPECT_EQ(actual2, 'O');
+  EXPECT_EQ(actual2, 'X');
+
+  Piece actual3 = obj.dropPiece(0);
+  EXPECT_EQ(actual3, 'O');
+
+  Piece actual4 = obj.dropPiece(0);
+  EXPECT_EQ(actual4, '?');
 }
