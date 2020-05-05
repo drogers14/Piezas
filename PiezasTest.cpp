@@ -65,3 +65,10 @@ Piece actual5 = obj.pieceAt(0, 0);
 EXPECT_EQ(actual5, X);
 
 }
+
+TEST(PiezasTest, gameStateTest){
+  Piezas obj;
+  Piece actual = obj.gameState();
+  EXPECT_EQ(actual, Invalid);
+
+}
