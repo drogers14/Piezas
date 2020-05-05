@@ -40,5 +40,14 @@ TEST(PiezasTest, dropPieceOutOfBounds)
 
   Piece actual4 = obj.dropPiece(0);
   EXPECT_EQ(actual4, '?');
-  
+}
+
+TEST(PiezasTest, pieceAtTest)
+{
+Piezas obj;
+Piece actual = obj.pieceAt(3, 4);
+EXPECT_EQ(actual, Invalid);
+
+
+
 }
