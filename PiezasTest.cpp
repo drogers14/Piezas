@@ -23,5 +23,5 @@ TEST(PiezasTest, dropPieceOutOfBounds)
 {
   Piezas obj;
   Piece actual = obj.dropPiece(3);
-  EXPECT_EQ(actual,  Invalid);
+  EXPECT_EQ(actual,  '?');
 }
