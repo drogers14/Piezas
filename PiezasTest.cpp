@@ -94,8 +94,8 @@ TEST(PiezasTest, gameStateTest){
   obj.dropPiece(3);
 
 
-  Piece actual1 = obj.gameState();
-  EXPECT_EQ(actual, Blank);
+  Piece tie = obj.gameState();
+  EXPECT_EQ(tie, Blank);
 
 
 }
