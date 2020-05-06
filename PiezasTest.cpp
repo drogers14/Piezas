@@ -160,10 +160,11 @@ TEST(PiezasTest, xwin)
   obj.dropPiece(3);//x
   obj.dropPiece(1);//o
   obj.dropPiece(2);//x
+  obj.dropPiece(3);
   //Piece test =  obj.dropPiece(3);//o
 
   //EXPECT_EQ(test, X);
 
-  Piece xWin = obj.gameState();
-  EXPECT_EQ(xWin, Invalid);
+  Piece Win = obj.gameState();
+  EXPECT_EQ(Win, Invalid);
 }
