@@ -166,5 +166,5 @@ TEST(PiezasTest, xwin)
   //EXPECT_EQ(test, X);
 
   Piece Win = obj.gameState();
-  EXPECT_EQ(Win, Blank);
+  EXPECT_EQ(Win, X);
 }
